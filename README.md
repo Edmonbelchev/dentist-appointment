@@ -21,7 +21,7 @@ cp .env.example .env
 Make sure the following values in .env match the Docker setup:
 ```
 DB_CONNECTION=mysql
-DB_HOST=db
+DB_HOST=larave_db
 DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=laravel
