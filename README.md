@@ -31,7 +31,13 @@ MAIL_HOST=mailhog
 MAIL_PORT=1025
 ```
 
-### 3. 🏗 Build and run the Docker containers
+### 3. 📦 Install dependencies
+```
+composer install
+npm install
+```
+
+### 4. 🏗 Build and run the Docker containers
 ```
 docker-compose up -d --build
 ```
@@ -41,13 +47,12 @@ This will start the following services:
 - db – MySQL database (port 3306)
 - mailhog – Email testing service (SMTP on 1025, UI on 8025)
 
-### 4. 📦 Install dependencies
+### 5. 🔑 Generate env key
 ```
-composer install
-npm install
+php artisan key:generate
 ```
 
-### 5. 📚 Run migrations
+### 6. 📚 Run migrations
 ```
 php artisan migrate
 ```
@@ -66,6 +71,6 @@ Seeding the data would to the following:
 - Some patients will share the same EGN (randomly repeated)
 - Random descriptions and notification methods (sms, email)
 
-### 6. 📬 Email Testing with Mailhog
+### 7. 📬 Email Testing with Mailhog
 You can view sent emails in Mailhog:
 👉 http://localhost:8025
