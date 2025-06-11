@@ -29,6 +29,9 @@ DB_PASSWORD=secret
 
 MAIL_HOST=mailhog
 MAIL_PORT=1025
+
+VITE_APP_NAME="${APP_NAME}"
+VITE_PORT=5173
 ```
 
 ### 3. 📦 Install dependencies
